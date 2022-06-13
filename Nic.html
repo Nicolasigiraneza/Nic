@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Who Am I ? | NIC</title>
+        <link rel="stylesheet" href="Nic.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="#" class="logo">Who's Nic?</a>
+                <div class="toggle"></div>
+            </header>
+            <img src="bg.jpg" class="bg">
+            <img src="Nic.png" class="me">
+            <div class="content">
+                <h2>What to know about <br> <span>NIC</span>?</h2>
+                <p>
+                    Nicolas IGIRANEZA, Is a normal Boy who has the slogan of <br> <i>"I Just Want To Live My Life"</i>. <br>
+                    He likes to have real relationship with his surround peaple, <br>
+                    His Birth dates is <i>"10 December 2003"</i> and
+                    He live in Family of Seven(7) members(Father, Mother, Three Boys and Two Girls).
+
+                </p>
+                <a href="#">Know More</a>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="email.png"></a></li>
+                <li><a href="#"><img src="fb.png"></a></li>
+                <li><a href="#"><img src="IGG.png"></a></li>
+            </ul>
+            <div class="textBlocks">
+                <div class="block">
+                    <h3>My skills and knowledges</h3>
+                    <p>
+                        Dyanamic and Static website development, photo and video editing, 
+                        Lyrics making, video and photo shooting, Displine and Relationship with others.
+                    </p>
+                </div>
+                <div class="block">
+                    <h3>My Favorites(Hobbies)</h3>
+                    <p>
+                        Praying GOD, Computer, Telephone, Watching musics and Films, Crietivities and Innovations works,
+                        Playing basketball.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+             document.addEventListener("mousemove", function (e) {
+                const bg = document.querySelector('.bg');
+                const Nic = document.querySelector('.me');
+                const content = document.querySelector('.content');
+
+                bg.style.width = 100 + e.pageX/100 + '%';
+                bg.style.height = 100 + e.pageX/100 + '%';
+
+                Nic.style.right = 100 + e.pageX/2 + 'px';
+                content.style.left = 100 + e.pageX/2.5 + 'px';
+             })
+        </script>
+    </body>
+</html> 
